@@ -1,0 +1,15 @@
+{
+  "name": "bun-splitting-bug",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "rm -rf ./dist && bun build --splitting --outdir dist index.html"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
